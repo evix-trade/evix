@@ -1,0 +1,4 @@
+packages:
+  - "sdk/typescript"
+  - "website"
+  - "examples/*"
