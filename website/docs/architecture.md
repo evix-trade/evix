@@ -96,14 +96,3 @@ The SDK does **not** add routing, quoting, or off-chain logic. It is a typed, va
 3. **Deployment isolation** - No shared state between customers or chains.
 4. **Strategy flexibility** - Execution logic is configurable per deployment.
 5. **SDK transparency** - The SDK generates contract calls. It does not introduce hidden behavior.
-
-## Gas Overhead
-
-Evix is designed to minimize on-chain overhead. Gas consumption scales with execution complexity:
-
-| Scenario | Overhead |
-|---|---|
-| **Standard execution** | ~9,000 gas on top of the base swap |
-| **Complex execution** | Up to ~50,000 gas |
-
-Overhead is additive to the gas cost of the underlying swap. Simple, well-configured deployments targeting liquid pairs will consistently sit at the lower end of this range.
